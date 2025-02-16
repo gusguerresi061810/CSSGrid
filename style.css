@@ -18,7 +18,7 @@ body { padding: 0; margin: 0; }
         grid-area: header;
         background: linear-gradient(135deg, #004080, #007acc);
         color: white;
-        padding: 40px 20px;
+        padding: 20px 10px;
         font-size: 45px;
         font-weight: bold;
         text-transform: uppercase;
