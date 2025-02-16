@@ -7,11 +7,15 @@ body { padding: 0; margin: 0; }
         border: 2px solid #555;
         padding: 8px;
         min-height: 100vh;
-        
+        grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 4fr 1fr;
       }
       header {
+        grid-area: header;
         border: 2px solid #dd0808; /* Dark red */
         background-color: #ff6666; /* Light red */
       }
