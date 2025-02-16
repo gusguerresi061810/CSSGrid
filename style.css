@@ -20,10 +20,12 @@ body { padding: 0; margin: 0; }
         background-color: #ff6666; /* Light red */
       }
       aside {
+        grid-area: aside;
         border: 2px solid #0ba7c6; /* Dark cyan */
         background-color: #74ddf2; /* Light cyan */
       }
       main {
+        grid-area: main;
         border: 2px solid #6f09e5; /* Dark purple */
         background-color: #b880f7; /* Light purple */
       }
