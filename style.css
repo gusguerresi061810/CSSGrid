@@ -30,4 +30,5 @@ body { padding: 0; margin: 0; }
       footer {
         border: 2px solid #c4be0d; /* Dark yellow */
         background-color: #f7f380; /* Light yellow */
+        grid-area: footer;
       }
