@@ -17,6 +17,8 @@ body { padding: 0; margin: 0; }
       header {
         grid-area: header;
         font-weight : bold;
+        justify-self: stretch;
+        align-self: stretch;
         font-size: 40px;
         text-align: center;
         border: 2px solid #dd0808; /* Dark red */
