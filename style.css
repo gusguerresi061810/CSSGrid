@@ -32,14 +32,20 @@ body { padding: 0; margin: 0; }
         border: 2px solid #dd0808; Dark red 
         background-color: #ff6666;  Light red */
       }
-     nav ul {
+     nav {
        grid-area: nav;
        display: flex;
        justify-content: center;
        background: #007acc;
        padding: 10px;
-       list-style: none;
-     }
+      }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
      nav ul li {
     margin: 0 15px;
