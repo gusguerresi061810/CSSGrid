@@ -4,8 +4,6 @@ body { padding: 0; margin: 0; }
       /* Making things visible on the page */
       .container {
         display:grid;
-        border: 2px solid #555;
-        padding: 8px;
         min-height: 100vh;
         grid-template-areas: 
                 "header header"
