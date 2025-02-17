@@ -32,6 +32,10 @@ body { padding: 0; margin: 0; }
         border: 2px solid #dd0808; Dark red 
         background-color: #ff6666;  Light red */
       }
+      nav {
+           grid-area: nav;
+      }
+
       aside {
         grid-area: aside;
         border: 2px solid #0ba7c6; /* Dark cyan */
