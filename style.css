@@ -34,6 +34,8 @@ body { padding: 0; margin: 0; }
       }
       nav {
            grid-area: nav;
+           background: #007acc;
+           colour: white;
       }
 
       aside {
