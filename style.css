@@ -54,6 +54,7 @@ body { padding: 0; margin: 0; }
 
 nav ul li a:hover {
     color: #ffcc00;
+}
 
       aside {
         grid-area: aside;
