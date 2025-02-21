@@ -25,21 +25,23 @@ header {
     border-bottom: 3px solid #ffcc00;
 }
 
+
+
 .header-title {
-    flex-grow: 1;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 50px;
 }
 
 nav {
-    grid-area: nav;
     display: flex;
-    justify-content: center;
-    background: black;
+    justify-content: flex-start;
+    background: #007acc;
     padding: 10px;
+    width: 100%;
 }
 
 nav ul {
