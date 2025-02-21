@@ -1,54 +1,38 @@
-/* Reset default margin and padding */
+/* Reset Styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Apply a modern font */
-body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
 }
 
-/* Modernized Header with Logo and Navigation */
+/* Grid Container for Full Page Layout */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header with Flexbox for Alignment */
 header {
+    grid-area: header;
     background: black;
     color: white;
-    padding: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #ffcc00;
+    padding: 20px;
 }
 
-
-
-.header-title {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin-right: 100px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start;
-    background: black;
-    padding: 10px;
-    width: 100%;
-}
-
+/* Navigation with Flexbox */
 nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -58,33 +42,45 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Sections styling */
-main {
+/* Sidebar */
+aside {
+    grid-area: aside;
+    background: lightgray;
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
-section {
+/* Main Content */
+main {
+    grid-area: main;
     background: white;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styling */
+/* Footer */
 footer {
+    grid-area: footer;
     background: #004080;
     color: white;
+    text-align: center;
     padding: 10px;
-    margin-top: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
