@@ -25,11 +25,6 @@ header {
     border-bottom: 3px solid #ffcc00;
 }
 
-header img {
-    height: 50px;
-    margin-left: 20px;
-}
-
 .header-title {
     flex-grow: 1;
     text-align: center;
