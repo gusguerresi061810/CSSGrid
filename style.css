@@ -19,7 +19,7 @@ header {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #ffcc00;
@@ -27,7 +27,6 @@ header {
 
 .header-title {
     flex-grow: 1;
-    text-align: left;
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
