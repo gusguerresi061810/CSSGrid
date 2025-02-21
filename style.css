@@ -44,7 +44,7 @@ nav {
     grid-area: nav;
     display: flex;
     justify-content: center;
-    background: #007acc;
+    background: black;
     padding: 10px;
 }
 
