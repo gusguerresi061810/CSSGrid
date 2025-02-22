@@ -60,6 +60,13 @@ footer {
     padding: 10px;
 }
 
+/* Logo Styling */
+.logo {
+    height: 50px;  /* Adjust as needed */
+    width: auto;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
