@@ -30,9 +30,15 @@ header {
 }
 
 /* Navigation with Flexbox */
+nav {
+    display: flex;
+}
+
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -42,13 +48,20 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 /* Main Content */
 main {
     grid-area: main;
     background: white;
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
 /* Footer */
@@ -57,35 +70,34 @@ footer {
     background: #004080;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-size: 14px;
 }
 
 /* Logo Styling */
 .logo {
-    height: 70px;  /* Adjust as needed */
+    height: 70px;
     width: auto;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 1fr;
+    header {
+        flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
+        padding-top: 10px;
     }
 
     nav ul li {
         margin: 10px 0;
     }
 }
+
 
 
 
