@@ -30,6 +30,11 @@ header {
 }
 
 /* Navigation with Flexbox */
+nav {
+    margin-left: 20px; /* Moves navigation slightly to the left */
+}
+
+/* Navigation with Flexbox */
 nav ul {
     display: flex;
     list-style: none;
