@@ -27,9 +27,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative; /* Ensure nav doesn't overlap */
 }
 
-/* Navigation with Flexbox */
+/* Default Navigation - Desktop */
 nav {
     display: flex;
 }
@@ -90,32 +91,29 @@ footer {
     color: white;
 }
 
-/* Hide navigation menu by default on small screens */
-nav {
-    display: flex;
-}
-
+/* 🔹 MOBILE STYLES */
 @media (max-width: 768px) {
-    /* Hamburger button should be visible */
+    /* Show the hamburger menu */
     .menu-toggle {
         display: block;
     }
 
-    /* Hide the navigation by default */
+    /* Hide nav by default (fixes issue) */
     nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px; /* Pushes it further down */
-        right: 0;
+        top: 80px; /* Pushes menu down */
+        left: 0;
         width: 100%;
         background: black;
         text-align: center;
-        padding: 30px 0; /* Adds more space inside */
+        padding: 30px 0;
         transition: all 0.3s ease-in-out;
+        z-index: 1000; /* Ensure it appears above other elements */
     }
 
-    /* Show nav when it has the 'open' class */
+    /* Show nav when .open is added */
     nav.open {
         display: flex;
     }
@@ -123,14 +121,14 @@ nav {
     /* Ensure list items are properly spaced */
     nav ul {
         flex-direction: column;
-        gap: 20px; /* More space between links */
+        gap: 20px;
     }
 
     nav ul li {
         margin: 0;
     }
-
 }
+
 
 
 
