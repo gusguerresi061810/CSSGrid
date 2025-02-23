@@ -80,22 +80,57 @@ footer {
     width: auto;
 }
 
-/* Responsive Design */
+/* Default: Hide hamburger button on large screens */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hide navigation menu by default on small screens */
+nav {
+    display: flex;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    /* Show the hamburger button */
+    .menu-toggle {
+        display: block;
     }
 
+    /* Hide nav initially on mobile */
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust for spacing */
+        right: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Show nav when .open class is added */
+    nav.open {
+        display: flex;
+    }
+
+    /* Stack menu items vertically */
     nav ul {
         flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        gap: 15px;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0;
     }
+}
+
 }
 
 
