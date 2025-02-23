@@ -6,6 +6,11 @@ body, h1, h2, p, ul, li {
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Grid Container for Full Page Layout */
 .container {
     display: grid;
