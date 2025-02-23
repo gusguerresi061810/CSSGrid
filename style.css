@@ -95,41 +95,40 @@ nav {
     display: flex;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
-    /* Show the hamburger button */
+    /* Hamburger button should be visible */
     .menu-toggle {
         display: block;
     }
 
-    /* Hide nav initially on mobile */
+    /* Hide the navigation by default */
     nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Adjust for spacing */
+        top: 80px; /* Pushes it further down */
         right: 0;
         width: 100%;
         background: black;
         text-align: center;
-        padding: 20px 0;
+        padding: 30px 0; /* Adds more space inside */
+        transition: all 0.3s ease-in-out;
     }
 
-    /* Show nav when .open class is added */
+    /* Show nav when it has the 'open' class */
     nav.open {
         display: flex;
     }
 
-    /* Stack menu items vertically */
+    /* Ensure list items are properly spaced */
     nav ul {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px; /* More space between links */
     }
 
     nav ul li {
         margin: 0;
     }
-}
 
 }
 
