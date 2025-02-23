@@ -103,7 +103,7 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px; /* Pushes menu down */
+        top: 120px; /* Pushes menu down */
         left: 0;
         width: 100%;
         background: black;
