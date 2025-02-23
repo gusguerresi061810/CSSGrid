@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative; /* Ensure nav doesn't overlap */
+    position: relative;
 }
 
 /* Default Navigation - Desktop */
@@ -57,12 +57,24 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* Main Content */
+/* Main Content Grid */
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-template-rows: auto;
+    gap: 20px;
     background: white;
     padding: 40px;
     text-align: center;
+}
+
+/* Individual Section Styling */
+main section {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -103,14 +115,14 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px; /* Pushes menu down */
+        top: 80px;
         left: 0;
         width: 100%;
         background: black;
         text-align: center;
         padding: 30px 0;
         transition: all 0.3s ease-in-out;
-        z-index: 1000; /* Ensure it appears above other elements */
+        z-index: 1000;
     }
 
     /* Show nav when .open is added */
@@ -118,7 +130,7 @@ footer {
         display: flex;
     }
 
-    /* Ensure list items are properly spaced */
+    /* Stack menu items */
     nav ul {
         flex-direction: column;
         gap: 20px;
@@ -127,7 +139,13 @@ footer {
     nav ul li {
         margin: 0;
     }
+
+    /* Responsive Main Content: Single Column */
+    main {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+    }
 }
+
 
 
 
