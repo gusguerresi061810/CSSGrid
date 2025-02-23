@@ -10,16 +10,16 @@
 <body>
 
     <div class="container">
+        <!-- Header -->
         <header>
             <a href="index.html">
                 <img src="logo.svg" alt="Secure Cloud IT Logo" class="logo">
             </a>
 
-            <!-- Hamburger Menu Button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
-                ☰
-            </button>
+            <!-- Hamburger Button -->
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
+            <!-- Navigation Menu -->
             <nav>
                 <ul>
                     <li><a href="#">Security</a></li>
@@ -30,27 +30,48 @@
             </nav>
         </header>
 
-       <main>
-            <h2>Welcome to Secure Cloud IT</h2>
-            <p>We specialize in security, collaboration, and data analytics.</p>
+        <!-- Main Content -->
+        <main>
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to Secure Cloud IT. We specialize in Security, Collaboration, and Data Analytics & Reporting.</p>
+            </section>
+            <section id="security">
+                <h2>Security</h2>
+                <p>Ensuring the highest level of cybersecurity for your business operations.</p>
+            </section>
+            <section id="collaboration">
+                <h2>Collaboration</h2>
+                <p>Empowering teams to work together efficiently with secure and seamless tools.</p>
+            </section>
+            <section id="data-analytics">
+                <h2>Data Analytics & Reporting</h2>
+                <p>Providing insights and reporting solutions to make data-driven decisions.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Get in touch with us to learn more.</p>
+            </section>
         </main>
 
+        <!-- Footer -->
         <footer>
             <p>&copy; 2025 Secure Cloud IT</p>
         </footer>
     </div>
 
-    <!-- JavaScript placed at the bottom -->
+    <!-- JavaScript for Hamburger Menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.querySelector(".menu-toggle");
             const nav = document.querySelector("nav");
 
             menuToggle.addEventListener("click", function () {
-                nav.classList.toggle("open"); // Toggle the 'open' class
+                nav.classList.toggle("open"); // Toggle menu visibility
             });
         });
     </script>
 
 </body>
 </html>
+
