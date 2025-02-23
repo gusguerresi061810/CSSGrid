@@ -61,7 +61,7 @@ nav ul li a:hover {
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 20px;
     background: white;
