@@ -40,8 +40,8 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    transform: translateX(-30px); /* Move nav items 30px to the left */
-    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    transform: translateX(-30px); /* Move nav items slightly left */
+    transition: transform 0.3s ease-in-out;
 }
 
 nav ul li {
@@ -109,13 +109,13 @@ footer {
         display: block;
     }
 
-    /* Hide nav by default, move off-screen */
+    /* Hide nav by default, move it off-screen */
     nav {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed; /* Fixed so it stays on screen */
         top: 0;
-        left: -100%;
+        left: -250px; /* Start off-screen */
         width: 250px;
         height: 100vh;
         background: black;
@@ -125,9 +125,9 @@ footer {
         z-index: 1000;
     }
 
-    /* Slide in menu when open */
+    /* When menu is open, slide it in */
     nav.open {
-        transform: translateX(100%);
+        transform: translateX(250px);
     }
 
     /* Stack menu items */
@@ -145,6 +145,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 
 
